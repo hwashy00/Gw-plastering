@@ -99,7 +99,7 @@ nav a:hover,nav a:focus-visible{opacity:1;color:var(--gold-bright)}
 .hero .ba-knob{width:58px;height:58px}
 .hero .ba::after{content:"";position:absolute;inset:auto 0 0 0;height:62%;z-index:3;pointer-events:none;background:linear-gradient(to top, rgba(13,12,10,.92) 8%, rgba(13,12,10,.45) 45%, transparent 100%)}
 .hero-copy{position:absolute;left:0;right:0;bottom:0;z-index:8;padding:0 28px calc(40px + env(safe-area-inset-bottom));max-width:var(--max);margin:0 auto;pointer-events:none}
-.hero-copy h1{font-size:clamp(2.4rem,7.5vw,5.8rem);font-weight:700}
+.hero-copy h1{font-size:clamp(2.4rem,7.5vw,5.8rem);font-weight:700;display:flex;flex-direction:column}.hero-copy h1 .gold-text{order:1}.hero-copy h1 .h1-sub{order:2}
 .hero-copy h1 .h1-sub{display:block;font-family:'Archivo',system-ui,sans-serif;font-size:clamp(1rem,2.2vw,1.35rem);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#cfc4ae;margin-top:14px}
 .hero-copy p{margin:18px 0 26px;max-width:540px;color:#cfc4ae;font-size:1.05rem}
 .hero-copy .row{display:flex;gap:14px;flex-wrap:wrap;pointer-events:auto}
@@ -447,6 +447,22 @@ body{padding-bottom:64px}
           "@id": "https://gwplastering.co.uk/landlord-plastering-exeter#service",
           "name": "Landlord & Rental Property Plastering"
         }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://gwplastering.co.uk/skimming-plastering-exeter#service",
+          "name": "Render Repairs & Patching"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://gwplastering.co.uk/skimming-plastering-exeter#service",
+          "name": "Ceiling Repairs"
+        }
       }
     ]
   }
@@ -576,7 +592,7 @@ body{padding-bottom:64px}
 <input aria-label="Drag to compare before and after plastering" class="ba-range" max="100" min="0" step="0.1" type="range" value="50"/>
 </div>
 <div class="hero-copy">
-<h1><span class="gold-text">Walls like glass.</span><span class="h1-sub">Plasterer in Exeter &amp; Devon</span></h1>
+<h1><span class="h1-sub">Plasterer in Exeter &amp; Devon</span><span class="gold-text">Walls like glass.</span></h1>
 <p>Skimming, re-boarding, rendering, artex removal and repairs, across Exeter and the whole of Devon. Free quotes.</p>
 <div class="row">
 <a class="btn" href="https://wa.me/447557355420?text=Hi%2C%20I%27d%20like%20a%20plastering%20quote"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2Z"></path></svg> WhatsApp a free quote</a>
@@ -838,6 +854,8 @@ body{padding-bottom:64px}
 <a href="/lime-plastering-devon">Lime Plastering</a><br/>
 <a href="/artex-removal-exeter">Artex Removal</a><br/>
 <a href="/plaster-repairs-exeter">Plaster Repairs</a><br/>
+<a href="/render-repairs-exeter">Render Repairs</a><br/>
+<a href="/ceiling-repairs-exeter">Ceiling Repairs</a><br/>
 <a href="/damp-plaster-repair-exeter">Damp &amp; Blown Plaster</a><br/>
 <a href="/water-damaged-ceiling-repair-exeter">Water Damaged Ceilings</a><br/>
 <a href="/landlord-plastering-exeter">Landlord Plastering</a>
