@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://gwplastering.co.uk/sitemap.xml
