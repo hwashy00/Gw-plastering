@@ -79,6 +79,22 @@ footer a:hover{color:var(--gold-bright)}
 .callbar svg{width:20px;height:20px;fill:currentColor}
 @media(min-width:721px){.callbar{height:68px}footer{padding-bottom:90px}}
 :focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px}
+
+/* before/after slider */
+.ba{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:#000}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-before-wrap{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--cut,50%)) 0 0);will-change:clip-path}
+.ba-before-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--cut,50%);width:2px;background:linear-gradient(var(--gold-deep),var(--gold-bright),var(--gold-deep));transform:translateX(-1px);z-index:5;pointer-events:none}
+.ba-knob{position:absolute;top:50%;left:var(--cut,50%);transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;z-index:6;background:linear-gradient(135deg,var(--gold-bright),var(--gold-deep));color:#171206;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;letter-spacing:-.05em;box-shadow:0 6px 26px rgba(0,0,0,.6);pointer-events:none}
+.ba-tag{position:absolute;top:14px;z-index:4;font-size:.66rem;text-transform:uppercase;letter-spacing:.2em;padding:6px 12px;border:1px solid rgba(200,154,78,.35);border-radius:2px;background:rgba(13,12,10,.6);backdrop-filter:blur(3px)}
+.ba-tag.l{left:14px}
+.ba-tag.r{right:14px;color:var(--gold-bright)}
+.ba-range{position:absolute;inset:0;z-index:7;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;-webkit-appearance:none;appearance:none}
+.job-photos{display:grid;grid-template-columns:2fr 1fr;gap:14px;align-items:stretch}
+.job-photos .texture-shot{border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.job-photos .texture-shot img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:760px){.job-photos{grid-template-columns:1fr}}
 </style>
 <!--email_off--><script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -88,7 +104,7 @@ footer a:hover{color:var(--gold-bright)}
   "image": "https://gwplastering.co.uk/og-image.jpg",
   "url": "https://gwplastering.co.uk/rendering-exeter-devon",
   "telephone": "+447557355420",
-  "email": "gwplasteringdevon@gmail.com",
+  "email": "george.washbourn@yahoo.co.uk",
   "priceRange": "££",
   "description": "External rendering across Exeter and Devon — K-Rend silicone, through-coloured and traditional renders. Weatherproof finishes built for Devon's coast and climate. Free quotes by WhatsApp.",
   "address": {
@@ -317,9 +333,9 @@ footer a:hover{color:var(--gold-bright)}
 <section>
 <div class="wrap copy">
 <h2>External rendering across Devon</h2>
-<p class="lead">Render does two jobs at once. It weatherproofs your home and completely transforms how it looks.</p>
-<p>Devon throws a lot at a building: driving rain, damp, salt air near the coast and long spells of green-growing weather. A good external render is your home's first line of defence against all of it. We work mainly with <b>modern silicone renders</b>, including <a href="/k-rend-devon" style="color:var(--gold-bright)">K-Rend silicone systems</a>, which are breathable, highly water-repellent and far lower-maintenance than the old sand-and-cement renders that crack and stain.</p>
-<p>The big advantage of silicone render is that it's <b>through-coloured</b>, the colour runs all the way through the render rather than being painted on top. That means no repainting every few years, a consistent finish, and a wide range of colours to suit anything from a modern new-build to a traditional Devon property. Whether it's a full house, a single elevation, or repairs to existing render, the aim is the same: a clean, even, weatherproof finish that lasts.</p>
+<p class="lead">Render has two jobs. Keep the weather out of the wall, and make the house look right.</p>
+<p>Devon is hard on the outside of a house. Driving rain half the year, salt air anywhere near the coast, and that long mild damp that turns north-facing walls green. The render is what sits between all of that and your brickwork, so the system matters. We work mainly with <b>modern silicone renders</b>, including <a href="/k-rend-devon" style="color:var(--gold-bright)">K-Rend silicone systems</a>. They shed water, they let the wall breathe, and they don't crack and stain the way old sand-and-cement render does.</p>
+<p>Silicone render is also <b>through-coloured</b>. The colour runs the full depth of the coat instead of sitting on top as paint, so there's nothing to repaint every few years and nothing to fade patchily where the weather gets at it. Plenty of shades to choose from too. Full house, one elevation or a repair, the job underneath is the same: get the prep right and the finish takes care of itself.</p>
 </div>
 </section>
 <section>
@@ -327,7 +343,7 @@ footer a:hover{color:var(--gold-bright)}
 <h2>What our rendering covers</h2>
 <p class="lead">Modern and traditional rendering, done properly.</p>
 <div class="grid">
-<div class="card"><h3>Silicone thin-coat render</h3><p>Breathable, water-repellent silicone render for a clean, modern, low-maintenance finish.</p></div>
+<div class="card"><h3>Silicone thin-coat render</h3><p>Thin-coat silicone that sheds the rain and never wants repainting.</p></div>
 <div class="card"><h3>Through-coloured render</h3><p>Colour all the way through. No repainting, no patchy fading, a wide range of shades.</p></div>
 <div class="card"><h3><a href="/k-rend-devon" style="color:var(--gold-bright);text-decoration:none">K-Rend systems →</a></h3><p>Application of K-Rend silicone renders and finishes, applied to spec on the right backing coats. <a href="/k-rend-devon" style="color:var(--gold-bright)">See our K-Rend page</a>.</p></div>
 <div class="card"><h3>Render repairs</h3><p>Cracked, blown or stained render patched and made good so it blends with the rest.</p></div>
@@ -337,10 +353,48 @@ footer a:hover{color:var(--gold-bright)}
 </div>
 </section>
 <section>
+<div class="wrap">
+<h2>Recent rendering jobs</h2>
+<p class="lead">Blown render off, new render on. Drag the sliders to compare.</p>
+<h3 style="margin:18px 0 10px">Full re-render, EcoRend OCR</h3>
+<div class="job-photos">
+<div class="ba" style="aspect-ratio:4/3">
+<img alt="After: full re-render in EcoRend OCR with a Terraline scraped finish, Devon" class="ba-after" decoding="async" height="1200" loading="lazy" src="/after-full-re-render-ecorend-ocr-terraline-devon.jpg" width="1600"/>
+<div class="ba-before-wrap"><img alt="Before: old blown render on a house near Exeter" decoding="async" height="1200" loading="lazy" src="/before-old-blown-render-house-exeter.jpg" width="1600"/></div>
+<div aria-hidden="true" class="ba-line"></div>
+<div aria-hidden="true" class="ba-knob">&lt;&gt;</div>
+<span class="ba-tag l">Before</span><span class="ba-tag r">After</span>
+<input aria-label="Drag to compare the render before and after" class="ba-range" max="100" min="0" step="0.1" type="range" value="50"/>
+</div>
+<div class="texture-shot">
+<img alt="Close-up of EcoRend OCR Terraline scraped texture render finish" decoding="async" height="1600" loading="lazy" src="/ecorend-ocr-terraline-scraped-texture-render.jpg" width="1200"/>
+</div>
+</div>
+<p style="margin-top:14px">The old render on this one was blown all over. Hollow when you tapped it, water sitting in behind. It all came off. Primed, scratch coat, then top coated with EcoRend OCR in a Terraline scraped finish. Through-coloured, so it never needs painting.</p>
+
+<h3 style="margin:34px 0 10px">Bungalow gable, matched into the existing render</h3>
+<div class="job-photos">
+<div class="ba" style="aspect-ratio:4/3">
+<img alt="After: bungalow gable re-rendered with a Terraline finish, Devon" class="ba-after" decoding="async" height="1200" loading="lazy" src="/after-bungalow-gable-re-rendered-terraline-finish.jpg" width="1600"/>
+<div class="ba-before-wrap"><img alt="Before: blown sand and cement render hacked off a bungalow gable back to blockwork" decoding="async" height="1200" loading="lazy" src="/before-blown-sand-and-cement-render-hacked-off-bungalow.jpg" width="1600"/></div>
+<div aria-hidden="true" class="ba-line"></div>
+<div aria-hidden="true" class="ba-knob">&lt;&gt;</div>
+<span class="ba-tag l">Before</span><span class="ba-tag r">After</span>
+<input aria-label="Drag to compare the gable before and after re-rendering" class="ba-range" max="100" min="0" step="0.1" type="range" value="50"/>
+</div>
+<div class="texture-shot">
+<img alt="New Terraline render blended against the bungalow's existing finish" decoding="async" height="1600" loading="lazy" src="/new-terraline-render-matched-to-existing-bungalow.jpg" width="1200"/>
+</div>
+</div>
+<p style="margin-top:14px">The sand and cement on this gable had blown and was coming away in slabs, you can see the pile of it on the sheets in the before shot. Everything came off, back to the blockwork. Primed, scratch coat, then a Terraline top coat picked to sit right against the rest of the bungalow, so the new gable doesn't shout about being new. That's the third photo: new render meeting the old, and you'd walk past it.</p>
+</div>
+</section>
+
+<section>
 <div class="wrap copy">
 <h2>Why silicone render suits Devon homes</h2>
-<p>Two things matter most in a wet, coastal county: keeping water out, and stopping the green algae and staining that thrive in damp air. Silicone render is <b>water-repellent</b> so rain beads and runs off rather than soaking in, but it's also <b>breathable</b>, so any moisture in the wall can still escape, which is exactly what you want on Devon's older and exposed properties.</p>
-<p>It's also low-maintenance and self-cleaning to a degree, holds its colour, and comes in a big range of shades. One thing worth knowing: render needs the right weather to go on, ideally between about 5°C and 35°C, with protection from rain and frost for the first couple of days while it cures. We'll plan the job around the forecast so it goes on right and lasts.</p>
+<p>In a county this wet you're fighting two things. Rain getting into the wall, and the green algae that creeps across anything that stays damp. Silicone render is <b>water-repellent</b>, so rain beads up and runs off instead of soaking in. It's <b>breathable</b> as well, and that combination is the point on older and exposed Devon walls: water off the surface, but anything already in the wall can still get out.</p>
+<p>It holds its colour and mostly keeps itself clean. One thing worth knowing though: render is fussy about the weather it goes on in. Too cold, too hot, or rain in the first couple of days and the cure suffers, so we plan jobs around the forecast rather than the diary. Sometimes that means waiting a few days for a window. Better that than a finish that fails in year two.</p>
 </div>
 </section>
 <section>
@@ -402,7 +456,7 @@ footer a:hover{color:var(--gold-bright)}
 <section>
 <div class="wrap copy">
 <h2>Got pebbledash, or an old solid wall?</h2>
-<p>There's a newer option most Devon renderers aren't offering yet. <a href="/cork-render-devon">Cork render</a> sprays straight over pebbledash without stripping it, insulates the wall, and, unlike silicone or cement. It's breathable, so it's safe on old cob and stone.</p>
+<p>There's a newer option most Devon renderers aren't offering yet. <a href="/cork-render-devon">Cork render</a> sprays straight over pebbledash without stripping it, insulates the wall as it goes on, and unlike silicone or cement it's breathable, so it's safe on old cob and stone.</p>
 </div>
 </section>
 <section class="band">
@@ -469,7 +523,7 @@ footer a:hover{color:var(--gold-bright)}
 <div>
 <strong>Get in Touch</strong>
 <a href="tel:+447557355420">07557 355 420</a><br/>
-<a href="mailto:gwplasteringdevon@gmail.com">gwplasteringdevon@gmail.com</a><br/><br/>
+<a href="mailto:george.washbourn@yahoo.co.uk">george.washbourn@yahoo.co.uk</a><br/><br/>
 <a href="/privacy" style="opacity:.75">Privacy &amp; Cookies</a>
 </div>
 </div>
@@ -479,5 +533,14 @@ footer a:hover{color:var(--gold-bright)}
 <a class="cb-wa" href="https://wa.me/447557355420?text=Hi%2C%20I%27d%20like%20a%20rendering%20quote"><svg viewbox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2Z"></path></svg> WhatsApp</a>
 </div>
 <script defer="" src="/cookie-consent.js"></script>
+<script>
+document.querySelectorAll('.ba').forEach(function(ba){
+  var range = ba.querySelector('.ba-range');
+  if(!range) return;
+  function set(v){ ba.style.setProperty('--cut', v + '%'); }
+  range.addEventListener('input', function(){ set(this.value); });
+  set(range.value);
+});
+</script>
 </body>
 </html>
