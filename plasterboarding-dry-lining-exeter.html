@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Plasterboarding &amp; Dry Lining Exeter | GW Plastering</title>
-<meta content="Plasterboarding and dry lining across Exeter and Devon. Stud walls, ceilings, dot and dab, and insulated board, boarded and skimmed by one firm." name="description"/>
+<meta content="Plasterboarding and dry lining across Exeter and Devon. Stud walls, ceilings, dot and dab, insulated board and conservatory roofs, boarded and skimmed by one firm." name="description"/>
 <link href="https://gwplastering.co.uk/plasterboarding-dry-lining-exeter" rel="canonical"/><meta content="website" property="og:type"/><meta content="Plasterboarding &amp; Dry Lining Exeter | GW Plastering" property="og:title"/><meta content="Plaster repairs across Exeter and Devon. Cracked plaster, blown patches and water-damaged ceilings, blended invisibly back into the wall. Fast and tidy. Free WhatsApp quotes." property="og:description"/><meta content="https://gwplastering.co.uk/plasterboarding-dry-lining-exeter" property="og:url"/><meta content="https://gwplastering.co.uk/og-image.jpg" property="og:image"/><meta content="GW Plastering &amp; Rendering" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Plaster Repairs Exeter &amp; Devon | Cracks, Leaks &amp; Ceilings | GW Plastering" name="twitter:title"/><meta content="Plaster repairs across Exeter and Devon. Cracked plaster, blown patches and water-damaged ceilings, blended invisibly back into the wall. Fast and tidy. Free WhatsApp quotes." name="twitter:description"/><meta content="https://gwplastering.co.uk/og-image.jpg" name="twitter:image"/>
 <link href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Crect%20width%3D%2248%22%20height%3D%2248%22%20rx%3D%229%22%20fill%3D%22%230e0e0e%22/%3E%3Ctext%20x%3D%2224%22%20y%3D%2234%22%20font-family%3D%22Georgia%2C%27Times%20New%20Roman%27%2Cserif%22%20font-size%3D%2223%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%20fill%3D%22%23d6a93e%22%3EGW%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
 <link href="/favicon.png" rel="icon" sizes="512x512" type="image/png"/>
@@ -79,7 +79,22 @@ footer a:hover{color:var(--gold-bright)}
 .callbar svg{width:20px;height:20px;fill:currentColor}
 @media(min-width:721px){.callbar{height:68px}footer{padding-bottom:90px}}
 :focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px}
-</style>
+
+.ba{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:#000}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-before-wrap{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--cut,50%)) 0 0);will-change:clip-path}
+.ba-before-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--cut,50%);width:2px;background:linear-gradient(var(--gold-deep),var(--gold-bright),var(--gold-deep));transform:translateX(-1px);z-index:5;pointer-events:none}
+.ba-knob{position:absolute;top:50%;left:var(--cut,50%);transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;z-index:6;background:linear-gradient(135deg,var(--gold-bright),var(--gold-deep));color:#171206;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;letter-spacing:-.05em;box-shadow:0 6px 26px rgba(0,0,0,.6);pointer-events:none}
+.ba-tag{position:absolute;top:14px;z-index:4;font-size:.66rem;text-transform:uppercase;letter-spacing:.2em;padding:6px 12px;border:1px solid rgba(200,154,78,.35);border-radius:2px;background:rgba(13,12,10,.6);backdrop-filter:blur(3px)}
+.ba-tag.l{left:14px}
+.ba-tag.r{right:14px;color:var(--gold-bright)}
+.ba-range{position:absolute;inset:0;z-index:7;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;-webkit-appearance:none;appearance:none}
+.job-photos{display:grid;grid-template-columns:2fr 1fr;gap:14px;align-items:stretch}
+.job-photos .texture-shot{border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.job-photos .texture-shot img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:760px){.job-photos{grid-template-columns:1fr}}
+.board-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.board-gallery img{width:100%;height:100%;object-fit:cover;border:1px solid var(--line);border-radius:3px;display:block;aspect-ratio:3/4}@media(max-width:760px){.board-gallery{grid-template-columns:repeat(2,1fr)}}</style>
 <!--email_off--><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
@@ -159,46 +174,11 @@ footer a:hover{color:var(--gold-bright)}
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does a plaster repair cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Plaster repairs are priced by the job rather than by the square metre. The main factors are the size of the damaged area, whether the repair needs to blend invisibly into existing plaster, what caused the damage, and whether the wall is modern plasterboard or older lath-and-plaster. Bundling several small repairs into a single visit is significantly better value than separate call-outs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "My ceiling's water-damaged after a leak — can you fix it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — that's one of the most common urgent jobs we get called for. Once the leak itself is stopped, he re-boards and re-skims the damaged area and blends it into the rest of the ceiling so it's invisible once painted."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you repair a crack without re-plastering the whole wall?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually, yes. Most cracks and blown patches can be cut out, filled and skimmed locally and matched to the surrounding wall — no need to do the whole room. If a wall needs more than a patch, we'll say so before we start."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you do emergency repairs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "we prioritise urgent jobs like water-damaged or collapsed ceilings. Send a photo on WhatsApp and we'll tell you how quickly we can get to you — there's no call-out charge to come and look."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does plaster crack or blow?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Common causes are building settlement, vibration, leaks, or — in older homes — old lath-and-plaster losing its grip over time. The repair approach depends on the cause, which is why we look before quoting."
-      }
-    }
+    {"@type": "Question", "name": "Can you board over an artex ceiling?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and it's often the neatest way to deal with artex. New boards go through the old ceiling into the joists, then a fresh skim over the top. The artex is sealed away without being disturbed, which matters on older ceilings where the texture can contain asbestos."}},
+    {"@type": "Question", "name": "Can I hang a TV on a dot and dab wall?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but not off the plasterboard alone. Dot and dab leaves voids behind the board, so anything heavy needs fixings that go through into the masonry behind. If you tell us what's going where before we board, we'll put solid backing in the right spots."}},
+    {"@type": "Question", "name": "Is insulated plasterboard worth it?", "acceptedAnswer": {"@type": "Answer", "text": "On a cold solid wall, usually yes. It won't match full external wall insulation, but it takes the chill off the room, cuts condensation and mould, and goes up in the same visit as ordinary boarding. North-facing rooms in older houses feel the difference most."}},
+    {"@type": "Question", "name": "How soon can it be skimmed and painted?", "acceptedAnswer": {"@type": "Answer", "text": "Skimming can follow the boarding straight away. Boarded one day, skimmed the next, sometimes the same day on a small room. The skim then needs around a week to dry before its first coat of paint, longer in cold weather."}},
+    {"@type": "Question", "name": "Do you board conservatory roofs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Once the solid roof structure and insulation are in, we take it from bare frames to a skimmed, paint-ready ceiling, skylights and awkward angles included."}}
   ]
 }</script><!--/email_off--><!--email_off--><script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -316,40 +296,82 @@ footer a:hover{color:var(--gold-bright)}
 <section>
 <div class="wrap copy">
 <h2>Boarded and skimmed by the same hands</h2>
-<p class="lead">Boarding and skimming are one job, not two. Get them done by one firm and you get a flat wall.</p>
-<p>Plenty of firms will board a wall and leave someone else to skim it. That's where the trouble starts, because a board hung badly, screws in the wrong place, joints not staggered, sheets that don't meet on a stud, makes for a skim that cracks and a wall that never sits truly flat. <b>We board and skim ourselves</b>, so there's nobody to blame and nothing to argue about.</p>
-<p>Dry lining is the modern way of getting a flat, paint-ready wall without wet backing coats. It suits new builds, extensions, loft and garage conversions, and any room where the existing wall is too far gone to be worth patching. Boards go up on stud or dot and dabbed straight to masonry, joints taped and filled, then skimmed to a glass-flat finish. On a solid or older wall, insulated board can go up at the same time and take the chill out of the room.</p>
+<p class="lead">Boarding and skimming are one job. Split them between two firms and you can end up with a wall that's never quite flat.</p>
+<p>A skim is only as good as the boards underneath it. Screws in the wrong places, joints that don't land on anything, sheets hung out of line, and the plasterer is fighting the wall before the first coat goes on. Then when it cracks a year later the boarder blames the skimmer and the skimmer blames the boarder. We do both. If something's wrong there's only us to ring, and it doesn't go wrong for the same reason.</p>
+<p>Dry lining is how most modern walls and ceilings get finished. Board fixed to studs or dabbed straight to the masonry, joints taped, then a skim over the top ready for paint. New builds, extensions, loft and garage conversions, or one room where the old wall is past saving. On a cold solid wall we can hang insulated board instead and take the chill off the room while we're at it.</p>
 </div>
 </section>
 <section>
 <div class="wrap">
 <h2>What we board</h2>
-<p class="lead">From a hairline crack to a collapsed ceiling.</p>
+<p class="lead">From new stud walls to conservatory roofs.</p>
 <div class="grid">
-<div class="card"><h3>Stud walls</h3><p>New partition walls framed, boarded and skimmed. Splitting a room, closing off a landing, or building out an en-suite.</p></div>
-<div class="card"><h3>Ceilings</h3><p>New or over-boarded ceilings, including artex ceilings boarded over rather than scraped, then skimmed flat.</p></div>
-<div class="card"><h3>Dot and dab</h3><p>Boards bonded straight to masonry, the quick way to a flat, paint-ready wall over rough or uneven brick and block.</p></div>
-<div class="card"><h3>Insulated board</h3><p>Thermal board on cold solid walls, taking the chill off the room and cutting condensation, boarded and skimmed in one go.</p></div>
-<div class="card"><h3>New builds &amp; extensions</h3><p>Whole plots or single rooms boarded and skimmed to a programme, working around the other trades rather than through them.</p></div>
-<div class="card"><h3>Loft &amp; garage conversions</h3><p>Awkward angles, sloped ceilings and knee walls boarded properly so the skim goes on flat and stays flat.</p></div>
+<div class="card"><h3>Stud walls</h3><p>New partition walls framed, boarded and skimmed. Splitting a room, closing a landing off, building an en-suite.</p></div>
+<div class="card"><h3>Ceilings</h3><p>New ceilings and overboarded ones, including artex boarded over rather than scraped off, then skimmed flat.</p></div>
+<div class="card"><h3>Dot and dab</h3><p>Boards bonded straight to brick or block. The quick route to a flat wall over rough masonry.</p></div>
+<div class="card"><h3>Insulated board</h3><p>Thermal board on cold solid walls. Takes the chill off and cuts condensation, boarded and skimmed in one go.</p></div>
+<div class="card"><h3>Conservatory roofs</h3><p>Solid conservatory roof conversions boarded and skimmed. Angles, skylights and all.</p></div>
+<div class="card"><h3>Lofts &amp; garages</h3><p>Sloped ceilings, knee walls and awkward corners boarded properly so the skim goes on flat and stays flat.</p></div>
+</div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<h2>A recent one: conservatory roof, all shapes and sizes</h2>
+<p class="lead">Boarded on one side of the slider, finished on the other.</p>
+<div class="job-photos">
+<div class="ba" style="aspect-ratio:3/4;max-height:640px">
+<img alt="Conservatory roof boarded and skimmed with skylights, finished room" class="ba-after" decoding="async" height="1866" loading="lazy" src="/conservatory-roof-boarded-and-skimmed-finished.jpg" width="1400"/>
+<div class="ba-before-wrap"><img alt="Conservatory roof panels boarded ready for skimming" decoding="async" height="1866" loading="lazy" src="/conservatory-roof-boarded-ready-for-skimming.jpg" width="1400"/></div>
+<div aria-hidden="true" class="ba-line"></div>
+<div aria-hidden="true" class="ba-knob">&lt;&gt;</div>
+<span class="ba-tag l">Boarded</span><span class="ba-tag r">Finished</span>
+<input aria-label="Drag to compare the conservatory roof boarded and finished" class="ba-range" max="100" min="0" step="0.1" type="range" value="50"/>
+</div>
+<div class="texture-shot">
+<img alt="Boarding a conservatory roof in Exeter, cutting plasterboard to the frame" decoding="async" height="1866" loading="lazy" src="/boarding-a-conservatory-roof-exeter.jpg" width="1400"/>
+</div>
+</div>
+<p style="margin-top:14px">A good example of why the boarding matters. Every panel on a different angle, skylights staying glazed in between, so there's a lot of edges meeting each other up there. All of it has to be beaded and skimmed dead straight, because the light coming through the glass shows up any dip in the ceiling. There's nowhere to hide on a job like this. Framed, insulated, boarded, skimmed. The room went from too hot to use half the year to a normal room with a lot of glass in the roof.</p>
+</div>
+</section>
+<section>
+<div class="wrap">
+<h2>A few more off the boarding side</h2>
+<p class="lead">Loft conversions mostly. Sloped ceilings, skylight reveals and stairwells, the awkward stuff.</p>
+<div class="board-gallery">
+<img alt="Pitched roof boarded out with skylights either side, ready for skimming" decoding="async" height="1060" loading="lazy" src="/boarded-pitched-roof-with-skylights-exeter.jpg" width="793"/>
+<img alt="Loft conversion with sloped ceilings and skylights boarded, scaffold tower up" decoding="async" height="1059" loading="lazy" src="/loft-conversion-boarded-sloped-ceilings-skylights.jpg" width="793"/>
+<img alt="Stairwell walls and ceiling boarded ready for skimming" decoding="async" height="990" loading="lazy" src="/stairwell-boarded-and-ready-for-skimming.jpg" width="1320"/>
+<img alt="Loft skylight reveals and knee walls boarded around fitted wardrobes" decoding="async" height="1600" loading="lazy" src="/loft-skylight-reveals-and-knee-walls-boarded.jpg" width="1200"/>
 </div>
 </div>
 </section>
 <section>
 <div class="wrap copy">
-<h2>Water damage &amp; emergencies</h2>
-<p>Water damage is the one that usually can't wait. A leak from a bathroom, a slipped roof tile or a burst pipe can leave a ceiling stained, sagging or blown, and the longer it's left, the further it spreads and the bigger the job becomes. We prioritise these: re-boarding and re-skimming the damaged area, then blending the repair into the rest of the room so it's invisible once painted.</p>
-<p>The quickest way to get an urgent repair sorted is to <b>send a photo on WhatsApp</b>. We can usually tell you straight away how soon we can get to you, and there's no call-out charge to come and take a look.</p>
+<h2>Dot and dab, battens, or stud?</h2>
+<p>Three ways to get a board on a wall, and people get sold the wrong one all the time.</p>
+<p><b>Dot and dab</b> is board stuck straight to the masonry with dabs of adhesive. Quick, tidy, and right for most sound brick and block walls. Two things worth knowing though. It needs a dry wall behind it. Dab over damp and you've sealed the problem in, and it will come back through eventually. And because the board sits on dabs with voids in between, heavy things like TVs and radiators need fixings that go through into the wall behind, not just into the board. Tell us what's going where before we board and we can put solid backing in the right places.</p>
+<p><b>Battens</b> are timber fixed to the wall first, with the board screwed to them. More work than dab, but you get a gap behind for cables and a screwed fixing you can trust, which is the better route on rough old walls.</p>
+<p><b>Stud</b> is a new frame altogether, timber or metal, for building a wall where there wasn't one. Splitting a bedroom, boxing in a stairwell, framing out an en-suite.</p>
+<p>Which one your job needs depends on the wall you've got, not on which is cheapest to sell you. Send photos over and we'll tell you which we'd use and why.</p>
+</div>
+</section>
+<section>
+<div class="wrap copy">
+<h2>Old ceiling: over the top, or down?</h2>
+<p>Two routes with a tired ceiling. <b>Overboard it</b>, new boards screwed straight through the old ceiling into the joists, then skimmed. No demolition, no skip full of lath and plaster, done in a fraction of the time. Or <b>pull it down</b> and start again, which is messier and dearer, but sometimes the only right answer if the old ceiling has sagged badly or the joists need looking at. We do both, and we'll tell you which yours needs when we see it. There's more on this on our <a href="/ceiling-repairs-exeter">ceiling repairs page</a>.</p>
 </div>
 </section>
 <section>
 <div class="wrap">
-<h2>Plastering questions</h2>
+<h2>Boarding and dry lining questions</h2>
 <div class="faq-list">
-<details class="faq-item"><summary>My ceiling's water-damaged after a leak, can you fix it?</summary><div class="faq-answer">Yes. That's one of the most common urgent jobs we get called for. Once the leak itself is stopped, he re-boards and re-skims the damaged area and blends it into the rest of the ceiling so it's invisible once painted.</div></details>
-<details class="faq-item"><summary>Can you repair a crack without re-plastering the whole wall?</summary><div class="faq-answer">Usually, yes. Most cracks and blown patches can be cut out, filled and skimmed locally and matched to the surrounding wall. No need to do the whole room. If a wall needs more than a patch, we'll say so before we start.</div></details>
-<details class="faq-item"><summary>Do you do emergency repairs?</summary><div class="faq-answer">We prioritise urgent jobs like water-damaged or collapsed ceilings. Send a photo on WhatsApp and we'll tell you how quickly we can get to you. There's no call-out charge to come and look.</div></details>
-<details class="faq-item"><summary>Why does plaster crack or blow?</summary><div class="faq-answer">Common causes are building settlement, vibration, leaks, or, in older homes, old lath-and-plaster losing its grip over time. The repair approach depends on the cause, which is why we look before quoting.</div></details>
+<details class="faq-item"><summary>Can you board over an artex ceiling?</summary><div class="faq-answer">Yes, and it's often the neatest way to deal with artex. New boards go through the old ceiling into the joists, then a fresh skim over the top. The artex is sealed away without being disturbed, which matters on older ceilings where the texture can contain asbestos.</div></details>
+<details class="faq-item"><summary>Can I hang a TV on a dot and dab wall?</summary><div class="faq-answer">Yes, but not off the plasterboard alone. Dot and dab leaves voids behind the board, so anything heavy needs fixings that go through into the masonry behind. If you tell us what's going where before we board, we'll put solid backing in the right spots and save you the head-scratching later.</div></details>
+<details class="faq-item"><summary>Is insulated plasterboard worth it?</summary><div class="faq-answer">On a cold solid wall, usually yes. It won't match full external wall insulation, but it takes the chill off the room, cuts condensation and mould, and goes up in the same visit as ordinary boarding. North-facing rooms in older houses feel the difference most.</div></details>
+<details class="faq-item"><summary>How soon can it be skimmed and painted?</summary><div class="faq-answer">Skimming can follow the boarding straight away, that's the point of one firm doing both. Boarded one day, skimmed the next, sometimes the same day on a small room. The skim then needs around a week to dry before its first coat of paint, longer in cold weather.</div></details>
+<details class="faq-item"><summary>Do you board conservatory roofs?</summary><div class="faq-answer">Yes. Once the solid roof structure and insulation are in, we take it from bare frames to a skimmed, paint-ready ceiling, skylights and awkward angles included.</div></details>
 </div>
 </div>
 </section>
@@ -358,7 +380,7 @@ footer a:hover{color:var(--gold-bright)}
 <h2>Other services &amp; areas</h2>
 <p class="lead">We cover all aspects of plastering and rendering, right across Devon.</p>
 <div class="villages">
-<a href="/rendering-exeter-devon">Rendering</a><a href="/skimming-plastering-exeter">Skimming</a><a href="/artex-removal-exeter">Artex removal</a>
+<a href="/ceiling-repairs-exeter">Ceiling Repairs</a><a href="/skimming-plastering-exeter">Skimming</a><a href="/artex-removal-exeter">Artex Removal</a><a href="/plastering-exeter">Plastering Exeter</a>
 </div>
 <div class="villages" style="margin-top:14px">
 <a href="/plastering-exeter">Exeter</a><a href="/plastering-crediton">Crediton</a><a href="/plastering-tiverton">Tiverton</a><a href="/plastering-exmouth">Exmouth</a><a href="/plastering-newton-abbot">Newton Abbot</a><a href="/plastering-okehampton">Okehampton</a><a href="/plastering-cullompton">Cullompton</a>
@@ -367,35 +389,29 @@ footer a:hover{color:var(--gold-bright)}
 </section>
 <section>
 <div class="wrap">
-<h2>What affects the cost of a plaster repair?</h2>
-<p class="lead">Repairs are priced by the job, not by the metre.</p>
+<h2>What affects the price of boarding and skimming?</h2>
+<p class="lead">Priced by the job, and mostly by these.</p>
 <div class="grid">
-<div class="card"><h3>Size of the damage</h3><p>A hairline crack and a whole blown wall are very different jobs, but both still need travel, materials, mixing and clearing up.</p></div>
-<div class="card"><h3>Whether it blends in</h3><p>Patching into an existing wall so you can't see the join takes more skill than skimming the lot. Sometimes re-skimming the whole wall is actually the cheaper answer.</p></div>
-<div class="card"><h3>What caused it</h3><p>If it's a leak or damp, the cause has to be dealt with first, otherwise the new plaster goes the same way as the old.</p></div>
-<div class="card"><h3>Bundle the small jobs</h3><p>Got three little repairs around the house? Get them all done in one visit. Calling us back three times costs you considerably more.</p></div>
-<div class="card"><h3>Old walls</h3><p>Lath-and-plaster and cob need handling differently to modern plasterboard, and take longer.</p></div>
-<div class="card"><h3>Ceilings vs walls</h3><p>Overhead work is always slower than working on a wall at chest height.</p></div>
+<div class="card"><h3>Walls or ceilings</h3><p>Overhead work is slower. A ceiling costs more than the same area of wall, and a conservatory roof full of angles costs more again.</p></div>
+<div class="card"><h3>Down or over</h3><p>Overboarding an old ceiling is one price. Pulling it down, clearing it and starting fresh is another. We'll tell you which yours needs.</p></div>
+<div class="card"><h3>The board itself</h3><p>Standard board, moisture board and insulated board are all different money. The right one depends on the room, not the price list.</p></div>
+<div class="card"><h3>Working round you</h3><p>Boarding a stripped-out room is quick. Working around a kitchen that's staying put takes longer and a lot more sheeting up.</p></div>
+<div class="card"><h3>Access &amp; angles</h3><p>A square bedroom is straightforward. Stairwells, sloped lofts and conservatory roofs are not.</p></div>
+<div class="card"><h3>One visit</h3><p>Board and skim done together, so you're not paying two firms' travel and two firms' margins.</p></div>
 </div>
-<p style="margin-top:20px;opacity:.85">Send a photo on WhatsApp, repairs are usually the easiest thing to price from a picture, and we'll come straight back to you.</p>
-</div>
-</section>
-<section>
-<div class="wrap copy">
-<h2>Just had work done and it's cracked?</h2>
-<p>Some cracking is normal. Some means the job was done badly. <a href="/is-it-normal-for-new-plaster-to-crack">Here's how to tell which you've got</a> before you ring anyone.</p>
+<p style="margin-top:20px;opacity:.85">Send photos on WhatsApp with a rough idea of size and we'll price it properly. No call-out charge to come and measure up.</p>
 </div>
 </section>
 <section class="band">
 <div class="wrap">
-<h2>Need a plaster repair in Exeter or Devon?</h2>
+<h2>Got a room that needs boarding out?</h2>
 <p>Send a quick WhatsApp with a photo and we'll get you a free quote. No call-out charge, no hard sell.</p>
 <div class="cta-row">
-<a class="btn" href="https://wa.me/447557355420?text=Hi%2C%20I%27ve%20got%20some%20plasterboarding%20that%20needs%20a%20quote">WhatsApp a free quote</a>
+<a class="btn" href="https://wa.me/447557355420?text=Hi%2C%20I%27ve%20got%20a%20room%20that%20needs%20boarding%20and%20skimming">WhatsApp a free quote</a>
 <a class="btn-ghost" href="tel:+447557355420">Call 07557 355 420</a>
 </div>
 </div>
-<div class="villages" style="margin-top:14px"><a href="/water-damaged-ceiling-repair-exeter">Water-Damaged Ceiling Repair</a><a href="/damp-plaster-repair-exeter">Damp &amp; Blown Plaster Repair</a></div>
+<div class="villages" style="margin-top:14px"><a href="/ceiling-repairs-exeter">Ceiling Repairs</a><a href="/skimming-plastering-exeter">Skimming &amp; Re-skims</a></div>
 </section>
 <footer>
 <div class="wrap">
@@ -460,5 +476,14 @@ footer a:hover{color:var(--gold-bright)}
 <a class="cb-wa" href="https://wa.me/447557355420?text=Hi%2C%20I%27ve%20got%20some%20plasterboarding%20that%20needs%20a%20quote"><svg viewbox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2Z"></path></svg> WhatsApp</a>
 </div>
 <script defer="" src="/cookie-consent.js"></script>
+<script>
+document.querySelectorAll('.ba').forEach(function(ba){
+  var range = ba.querySelector('.ba-range');
+  if(!range) return;
+  function set(v){ ba.style.setProperty('--cut', v + '%'); }
+  range.addEventListener('input', function(){ set(this.value); });
+  set(range.value);
+});
+</script>
 </body>
 </html>
