@@ -60,7 +60,7 @@ img{display:block}
 @keyframes lineIn{to{opacity:1;transform:translateY(0)}}
 @keyframes introOut{to{opacity:0;visibility:hidden}}
 
-header{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 28px;background:linear-gradient(to bottom, rgba(13,12,10,.92), rgba(13,12,10,0))}
+header{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 28px;background:linear-gradient(to bottom, rgba(13,12,10,.96), rgba(13,12,10,.8));backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand svg{width:40px;height:40px;flex:none}
 .brand .bt{line-height:1.1}
@@ -165,7 +165,7 @@ section{padding:100px 28px}
 .story-kicker b{color:var(--gold-bright)}
 .story-steps{position:relative;z-index:5;margin-top:-100svh}
 .step{min-height:100svh;display:flex;align-items:flex-end;padding:0 22px 11vh}
-.step-card{background:rgba(13,12,10,.92);border-left:4px solid var(--gold);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:3px;box-shadow:0 14px 40px rgba(0,0,0,.5);padding:22px 24px;max-width:420px;backdrop-filter:blur(4px)}
+.step-card{position:sticky;top:56svh;background:rgba(13,12,10,.92);border-left:4px solid var(--gold);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:3px;box-shadow:0 14px 40px rgba(0,0,0,.5);padding:22px 24px;max-width:420px;backdrop-filter:blur(4px)}
 .step-card .n{font-family:'Cinzel',serif;color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em}
 .step-card h3{font-size:1.4rem;margin:4px 0 6px}
 .step-card p{color:var(--sand);font-size:.95rem}
