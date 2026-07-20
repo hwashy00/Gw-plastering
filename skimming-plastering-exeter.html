@@ -79,6 +79,22 @@ footer a:hover{color:var(--gold-bright)}
 .callbar svg{width:20px;height:20px;fill:currentColor}
 @media(min-width:721px){.callbar{height:68px}footer{padding-bottom:90px}}
 :focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px}
+
+.ba{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:#000}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-before-wrap{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--cut,50%)) 0 0);will-change:clip-path}
+.ba-before-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--cut,50%);width:2px;background:linear-gradient(var(--gold-deep),var(--gold-bright),var(--gold-deep));transform:translateX(-1px);z-index:5;pointer-events:none}
+.ba-knob{position:absolute;top:50%;left:var(--cut,50%);transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;z-index:6;background:linear-gradient(135deg,var(--gold-bright),var(--gold-deep));color:#171206;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;box-shadow:0 6px 26px rgba(0,0,0,.6);pointer-events:none}
+.ba-tag{position:absolute;top:14px;z-index:4;font-size:.66rem;text-transform:uppercase;letter-spacing:.2em;padding:6px 12px;border:1px solid rgba(200,154,78,.35);border-radius:2px;background:rgba(13,12,10,.6)}
+.ba-tag.l{left:14px}.ba-tag.r{right:14px;color:var(--gold-bright)}
+.ba-range{position:absolute;inset:0;z-index:7;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;-webkit-appearance:none;appearance:none}
+.two-jobs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.photo-band{margin:0}
+.photo-band img{width:100%;max-height:420px;object-fit:cover;display:block;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photo-pair img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;border:1px solid var(--line);border-radius:3px;display:block}
+@media(max-width:760px){.two-jobs,.photo-pair{grid-template-columns:1fr}}
 </style>
 <!--email_off--><script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -346,6 +362,29 @@ footer a:hover{color:var(--gold-bright)}
 <p>Skimming covers a lot: bringing a tired room back to life, smoothing over old uneven walls, finishing fresh plasterboard in an extension, or making good after repairs. The key to a finish that lasts is <b>preparation</b>, clean, sound, properly sealed backgrounds, and that's the part cheaper jobs skip. We prep properly so the new skim keys on and doesn't crack or blow later.</p>
 </div>
 </section>
+
+<section>
+<div class="wrap">
+<h2>Watch a wall change</h2>
+<p class="lead">Drag the sliders. Bare and boarded on one side, skimmed on the other.</p>
+<div class="two-jobs">
+<div class="ba" style="aspect-ratio:4/3">
+<img alt="Single wall skimmed to a glass-smooth finish" class="ba-after" decoding="async" height="825" loading="lazy" src="/after-single-wall-brick-to-glass-smooth.jpg" width="1100"/>
+<div class="ba-before-wrap"><img alt="Bare brick wall before plastering" decoding="async" height="825" loading="lazy" src="/before-single-wall-brick-to-glass-smooth.jpg" width="1100"/></div>
+<div aria-hidden="true" class="ba-line"></div><div aria-hidden="true" class="ba-knob">&lt;&gt;</div>
+<span class="ba-tag l">Before</span><span class="ba-tag r">After</span>
+<input aria-label="Drag to compare the wall before and after skimming" class="ba-range" max="100" min="0" step="0.1" type="range" value="50"/>
+</div>
+<div class="ba" style="aspect-ratio:4/3">
+<img alt="Garden room freshly skimmed throughout" class="ba-after" decoding="async" height="825" loading="lazy" src="/after-garden-room-freshly-skimmed.jpg" width="1100"/>
+<div class="ba-before-wrap"><img alt="Garden room boarded out before skimming" decoding="async" height="825" loading="lazy" src="/before-garden-room-boarded-out.jpg" width="1100"/></div>
+<div aria-hidden="true" class="ba-line"></div><div aria-hidden="true" class="ba-knob">&lt;&gt;</div>
+<span class="ba-tag l">Before</span><span class="ba-tag r">After</span>
+<input aria-label="Drag to compare the garden room before and after skimming" class="ba-range" max="100" min="0" step="0.1" type="range" value="50"/>
+</div>
+</div>
+</div>
+</section>
 <section>
 <div class="wrap">
 <h2>What our skimming covers</h2>
@@ -360,13 +399,25 @@ footer a:hover{color:var(--gold-bright)}
 </div>
 </div>
 </section>
+<div class="photo-band"><img alt="Bedroom walls and ceiling re-skimmed in Exeter" decoding="async" height="900" loading="lazy" src="/bedroom-walls-and-ceiling-re-skimmed-exeter.jpg" width="1200"/></div>
 <section>
 <div class="wrap copy">
 <h2>What a good skim actually gives you</h2>
 <p>A proper skim is <b>dead flat</b>. No bumps, no trowel lines, and crucially no shadows when light rakes across it from a window or a lamp. That flatness is what makes paint sit beautifully and a room feel finished rather than tired. It's the difference between a wall you notice and a wall you don't.</p>
-<p>Getting there is about preparation as much as the trowel work: the background has to be clean, sound and sealed so the new plaster keys on properly and doesn't crack or blow down the line. We doesn't cut those corners, which is why the finish lasts. One thing worth knowing: fresh plaster needs a few days to a couple of weeks to dry out fully (it goes from dark to an even pale pink), then a watered-down mist coat before your top coats of paint.</p>
+<p>Getting there is about preparation as much as the trowel work: the background has to be clean, sound and sealed so the new plaster keys on properly and doesn't crack or blow down the line. We don't cut those corners, which is why the finish lasts. One thing worth knowing: fresh plaster needs a few days to a couple of weeks to dry out fully (it goes from dark to an even pale pink), then a watered-down mist coat before your top coats of paint.</p>
 </div>
 </section>
+<section>
+<div class="wrap">
+<h2>Fresh off the trowel</h2>
+<div class="photo-pair">
+<img alt="Room with arched window and curved ceiling skimmed, Devon" decoding="async" height="1600" loading="lazy" src="/room-with-arched-window-skimmed-devon.jpg" width="900"/>
+<img alt="Open plan room skimmed with boxed steel over the opening" decoding="async" height="900" loading="lazy" src="/open-plan-room-skimmed-with-boxed-steel-exeter.jpg" width="1200"/>
+</div>
+<p style="margin-top:14px">Curved ceilings, arched reveals and boxed steels. The awkward stuff is where a skim earns its keep.</p>
+</div>
+</section>
+
 <section>
 <div class="wrap">
 <h2>Plastering questions</h2>
@@ -493,5 +544,14 @@ footer a:hover{color:var(--gold-bright)}
 <a class="cb-wa" href="https://wa.me/447557355420?text=Hi%2C%20I%27d%20like%20a%20plastering%20quote"><svg viewbox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2Z"></path></svg> WhatsApp</a>
 </div>
 <script defer="" src="/cookie-consent.js"></script>
+<script>
+document.querySelectorAll('.ba').forEach(function(ba){
+  var range = ba.querySelector('.ba-range');
+  if(!range) return;
+  function set(v){ ba.style.setProperty('--cut', v + '%'); }
+  range.addEventListener('input', function(){ set(this.value); });
+  set(range.value);
+});
+</script>
 </body>
 </html>
