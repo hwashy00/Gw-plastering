@@ -117,7 +117,19 @@ section{padding:100px 28px}
 
 .services{border-top:1px solid var(--line)}
 .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:var(--line)}
-.svc{background:var(--ink);padding:34px 28px 40px;transition:background .25s}
+.svc{display:block;text-decoration:none;color:inherit;background:var(--ink);padding:34px 28px 40px;transition:background .25s}
+.svc:focus-visible{outline:2px solid var(--gold-bright);outline-offset:-2px}
+.svc-more{display:inline-block;margin-top:14px;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-bright);opacity:.75;transition:opacity .25s}
+.svc:hover .svc-more{opacity:1}
+.svc-more::after{content:" \2192"}
+@media(max-width:720px){
+.svc-grid{grid-template-columns:1fr 1fr}
+.svc{padding:20px 15px 22px}
+.svc .swatch{width:34px;height:34px;margin-bottom:12px}
+.svc h3{font-size:.92rem;line-height:1.3;margin-bottom:0}
+.svc p{display:none}
+.svc-more{margin-top:10px;font-size:.68rem;letter-spacing:.06em}
+}
 .svc:hover{background:var(--ink-soft)}
 .svc .swatch{width:52px;height:52px;border-radius:50%;margin-bottom:22px;border:1px solid var(--line)}
 .svc h3{font-size:1.05rem;letter-spacing:.04em;margin-bottom:10px}
@@ -604,20 +616,23 @@ body{padding-bottom:64px}
 <!-- SERVICES -->
 <section class="services" id="services">
 <div class="wrap">
-<span class="eyebrow">Scope of Works</span>
+<span class="eyebrow">Services We Provide</span>
 <h2 class="section-title">Plastering &amp; rendering in Exeter: every finish, from rough to ready</h2>
 <div class="svc-grid">
-<div class="svc reveal"><div class="swatch sw-skim"></div><h3>Skimming &amp; re-skims</h3><p>Full rooms or single walls skimmed back to a flawless, paint-ready surface.</p></div>
-<div class="svc reveal"><div class="swatch sw-artex"></div><h3>Artex Removal</h3><p>Dated textured ceilings made smooth and modern, safely handled, properly sealed.</p></div>
-<div class="svc reveal"><div class="swatch sw-render"></div><h3>Rendering</h3><p>External render, conservatories and patch repairs that stand up to Devon weather.</p></div>
-<div class="svc reveal"><div class="swatch sw-repair"></div><h3>Repairs &amp; patching</h3><p>Cracks, blown plaster, leaks and water-damaged ceilings, repaired and blended invisibly into the wall.</p></div>
-<div class="svc reveal"><div class="swatch sw-board"></div><h3>Boarding &amp; dot-and-dab</h3><p>Lath strip-outs, overboarding and ceilings boarded ready for a perfect skim.</p></div>
-<div class="svc reveal"><div class="swatch sw-ven"></div><h3>New builds &amp; renovations</h3><p>Full-property plastering for new builds, extensions and complete renovations.</p></div>
-<div class="svc reveal"><div class="swatch sw-render"></div><h3>Lime plastering &amp; rendering</h3><p>Breathable lime for cob, stone and period walls. The right choice for old Devon houses that need to breathe.</p></div>
-<div class="svc reveal"><div class="swatch sw-skim"></div><h3>K-Rend &amp; silicone render</h3><p>Through-coloured silicone render that never needs painting and shrugs off Devon weather.</p></div>
-<div class="svc reveal"><div class="swatch sw-board"></div><h3>Cork render</h3><p>Sprayed cork, breathable and insulating, straight over pebbledash or old solid walls. 25-year guarantee.</p></div>
+<a class="svc reveal" href="/skimming-plastering-exeter"><div class="swatch sw-skim"></div><h3>Skimming &amp; re-skims</h3><p>Full rooms or single walls skimmed back to a flawless, paint-ready surface.</p><span class="svc-more">More on skimming</span></a>
+<a class="svc reveal" href="/artex-removal-exeter"><div class="swatch sw-artex"></div><h3>Artex Removal</h3><p>Dated textured ceilings made smooth and modern, safely handled, properly sealed.</p><span class="svc-more">More on artex removal</span></a>
+<a class="svc reveal" href="/rendering-exeter-devon"><div class="swatch sw-render"></div><h3>Rendering</h3><p>External render, conservatories and patch repairs that stand up to Devon weather.</p><span class="svc-more">More on rendering</span></a>
+<a class="svc reveal" href="/render-repairs-exeter"><div class="swatch sw-repair"></div><h3>Render Repairs</h3><p>Cracked, hollow and blown render cut out, re-bonded and blended back in.</p><span class="svc-more">More on render repairs</span></a>
+<a class="svc reveal" href="/plaster-repairs-exeter"><div class="swatch sw-repair"></div><h3>Repairs &amp; patching</h3><p>Cracks, blown plaster, leaks and water-damaged walls, repaired and blended invisibly.</p><span class="svc-more">More on plaster repairs</span></a>
+<a class="svc reveal" href="/ceiling-repairs-exeter"><div class="swatch sw-repair"></div><h3>Ceiling Repairs</h3><p>Cracked, sagging and failing ceilings made sound and skimmed flat again.</p><span class="svc-more">More on ceiling repairs</span></a>
+<a class="svc reveal" href="/water-damaged-ceiling-repair-exeter"><div class="swatch sw-repair"></div><h3>Water Damaged Ceilings</h3><p>Leak damage cut back to something solid, dried, re-boarded and re-skimmed.</p><span class="svc-more">More on water damage</span></a>
+<a class="svc reveal" href="/damp-plaster-repair-exeter"><div class="swatch sw-render"></div><h3>Damp &amp; Blown Plaster</h3><p>Salt-damaged and blown plaster stripped back and replaced with the right system.</p><span class="svc-more">More on damp plaster</span></a>
+<a class="svc reveal" href="/plasterboarding-dry-lining-exeter"><div class="swatch sw-board"></div><h3>Boarding &amp; dot-and-dab</h3><p>Lath strip-outs, overboarding and ceilings boarded ready for a perfect skim.</p><span class="svc-more">More on boarding</span></a>
+<a class="svc reveal" href="/lime-plastering-devon"><div class="swatch sw-render"></div><h3>Lime plastering &amp; rendering</h3><p>Breathable lime for cob, stone and period walls. The right choice for old Devon houses that need to breathe.</p><span class="svc-more">More on lime work</span></a>
+<a class="svc reveal" href="/k-rend-devon"><div class="swatch sw-skim"></div><h3>K-Rend &amp; silicone render</h3><p>Through-coloured silicone render that never needs painting and shrugs off Devon weather.</p><span class="svc-more">More on K-Rend</span></a>
+<a class="svc reveal" href="/cork-render-devon"><div class="swatch sw-board"></div><h3>Cork render</h3><p>Sprayed cork, breathable and insulating, straight over pebbledash or old solid walls. 25-year guarantee.</p><span class="svc-more">More on cork render</span></a>
+<a class="svc reveal" href="/landlord-plastering-exeter"><div class="swatch sw-ven"></div><h3>Landlord &amp; rental work</h3><p>Void-period turnarounds, tenant damage and full re-skims, booked around your dates.</p><span class="svc-more">More on landlord work</span></a>
 </div>
-<p style="margin-top:28px;text-align:center;color:var(--sand);font-size:.95rem">More on each service: <a href="/skimming-plastering-exeter" style="color:var(--gold-bright);text-decoration:none">Skimming &amp; Plastering</a>  ·  <a href="/rendering-exeter-devon" style="color:var(--gold-bright);text-decoration:none">Rendering</a>  ·  <a href="/k-rend-devon" style="color:var(--gold-bright);text-decoration:none">K-Rend</a>  ·  <a href="/lime-plastering-devon" style="color:var(--gold-bright);text-decoration:none">Lime Plastering</a>  ·  <a href="/artex-removal-exeter" style="color:var(--gold-bright);text-decoration:none">Artex Removal</a>  ·  <a href="/plaster-repairs-exeter" style="color:var(--gold-bright);text-decoration:none">Plaster Repairs</a>  ·  <a href="/cork-render-devon" style="color:var(--gold-bright);text-decoration:none">Cork Render</a>  ·  <a href="/plasterboarding-dry-lining-exeter" style="color:var(--gold-bright);text-decoration:none">Plasterboarding &amp; Dry Lining</a>  ·  <a href="/landlord-plastering-exeter" style="color:var(--gold-bright);text-decoration:none">Landlord Plastering</a></p>
 </div>
 </section>
 <!-- PARALLAX BAND -->
