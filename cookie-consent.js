@@ -16,6 +16,7 @@
     window.gtag = function () { dataLayer.push(arguments); };
     gtag("js", new Date());
     gtag("config", GA_ID);
+    gtag("config", "AW-18529385412"); // Google Ads
   }
 
   function injectStyles() {
@@ -65,6 +66,21 @@
       bar.remove();
     });
   }
+
+  /* Lead tracking: every tap on a call or WhatsApp link is sent to GA4
+     as "call_click" / "whatsapp_click" (only once the visitor has accepted).
+     Mark both as Key events in GA4, then import them into Google Ads. */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || typeof window.gtag !== "function") return;
+    var href = a.getAttribute("href") || "";
+    var name = href.indexOf("tel:") === 0 ? "call_click"
+             : /wa\.me|whatsapp/.test(href) ? "whatsapp_click" : null;
+    if (!name) return;
+    gtag("event", name, { link_url: href, page_path: location.pathname, transport_type: "beacon" });
+    // Google Ads lead conversion ("Request quote")
+    gtag("event", "conversion", { send_to: "AW-18529385412/NZLsCM37lqcdEMT3v4NF", value: 1.0, currency: "GBP", transport_type: "beacon" });
+  }, true);
 
   var choice = null;
   try { choice = localStorage.getItem(KEY); } catch (e) {}
