@@ -75,7 +75,8 @@
     if (!a || typeof window.gtag !== "function") return;
     var href = a.getAttribute("href") || "";
     var name = href.indexOf("tel:") === 0 ? "call_click"
-             : /wa\.me|whatsapp/.test(href) ? "whatsapp_click" : null;
+             : /wa\.me|whatsapp/.test(href) ? "whatsapp_click"
+             : href.indexOf("mailto:") === 0 ? "email_click" : null;
     if (!name) return;
     gtag("event", name, { link_url: href, page_path: location.pathname, transport_type: "beacon" });
     // Google Ads lead conversion ("Request quote")
